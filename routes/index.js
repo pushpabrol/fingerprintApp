@@ -23,7 +23,7 @@ router.get('/login', function (req, res, next) {
   res.oidc.login({
     returnTo: '/profile',
     authorizationParams: {
-      redirect_uri: 'http://localhost:3000/callback',
+      redirect_uri: `${process.env.BASE_URL}/callback`,
       visitorId,
       requestId
     },

@@ -22,7 +22,8 @@ const config = {
   auth0Logout: true,
   routes : {
     login: false
-  }
+  },
+  baseURL : process.env.BASE_URL
 };
 
 const port = process.env.PORT || 3000;
